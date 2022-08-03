@@ -22,7 +22,7 @@ public class PostmanEchoTest {
                 .statusCode(200)
                 .body("data", equalTo("some data"))
                 .body("headers.host", equalTo("postman-echo.com"))
-                .body("headers.x-forwarded-proto", equalTo("https"))
+                .body("headers.x-forwarded-proto", equalTo("https!"))
                 .body("json", equalTo(null))
                 .extract()
                 .asString();
